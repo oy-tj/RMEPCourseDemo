@@ -23,7 +23,6 @@ def printProgress():
 
 if __name__ == '__main__':
     print("以两种方式遍历staName列表")
-    #333333333333
     for s in staName:
         print(s)
     for i in range(len(staName)):
