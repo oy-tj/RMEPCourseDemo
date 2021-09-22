@@ -1,7 +1,6 @@
 import time
 import keyboard
 
-# 按间距中的绿色按钮以运行脚本。
 staName = ['Initialize', 'S1', 'S2']
 sta = 0
 cnt = 0
@@ -32,12 +31,12 @@ if __name__ == '__main__':
     while True:
         while sta == 1:
             printProgress()
-            if keyboard.is_pressed('2'):  # if key 'q' is pressed
+            if keyboard.is_pressed('2'):  # if key '2' is pressed
                 sta = 2
                 changeSta()
         while sta == 2:
             printProgress()
-            if keyboard.is_pressed('1'):  # if key 'q' is pressed
+            if keyboard.is_pressed('1'):  # if key '1' is pressed
                 sta = 1
                 changeSta()
         if sta == 3:
